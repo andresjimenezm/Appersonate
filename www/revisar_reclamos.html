@@ -136,6 +136,13 @@
                         </li>
                         
                         <li id="email">
+                            <a href="acercade.html">
+                                <span class="nav-icon"><i class="icon-info-sign icon-2x"></i></span>
+                                <span class="sidebar-menu-item-text">Acerca de</span>
+                            </a>
+                        </li>
+                        
+                        <li id="email">
                             <a href="login.html">
                                 <span class="nav-icon"><i class="icon-remove icon-2x"></i></span>
                                 <span class="sidebar-menu-item-text">Cerrar Sesión</span> 
@@ -151,7 +158,7 @@
  <!-- page content header -->
                     <div class="row add-padding">
                             <div class="pull-left">
-                                <h1>QUEJA - RECLAMO No: 41</h1></br>
+                                <h1>DENUNCIA - Referencia No: <span id="referencia" style="color:#000;"></span></h1></br>
                             </div>
                     </div>
                     <!-- / page content header -->
@@ -166,16 +173,20 @@
                                      <div style="color:#666"><h1>Información</h1></div>
                                      <div class="clearfix"></div>
                                 </div>
-                  <div id="collapse1" class="panel-body panel-collapse collapse in">
+                                <div id="collapse1" class="panel-body panel-collapse collapse in">
                                         <h3 style="color:#666">Cédula del Usuario</h3>
-                                        <p><h3 style="color:#000">10458584</h3></p>
+                                        <p><h3 style="color:#000" id="doc_ciudadano"></h3></p>
                                         <br>
                                         <h3 style="color:#666">Tipología del evento</h3>
-                                        <p><h4 style="color:#000">SALUD - MALA ATENCIÓN</h4></p>
+                                        <p><h4 style="color:#000">
+                                                <span id="tipologia" style="color: #000;"></span> - <span id="subtipologia" style="color: #000;"></span>
+                                            </h4></p>
                                         <h3 style="color:#666">Ubicación</h3>
-                                        <p><h4 style="color:#000">AGUACHICA - CESAR</h4></p>
+                                        <p><h4 style="color:#000">
+                                            <span id="departamento" style="color:#000;">AGUACHICA</span> - <span id="municipio" style="color:#000;">CESAR</span>
+                                        </h4></p>
                                         <h3 style="color:#666">Fecha de Registro</h3>
-                                        <p><h4 style="color:#000">Agosto 03 de 2014</h4></p>
+                                        <p><h4 style="color:#000" id="fecha_registro"></h4></p>
                                      
                             </div>
                              <div class="panel-footer"></div>
@@ -195,11 +206,7 @@
                                      <div class="clearfix"></div>
                                 </div>
                                 <div id="collapse2" class="panel-body panel-collapse collapse in">
-                                   <p style="color:#000">Tres hospitales y 24 horas fueron necesarias para que doña Magdalena Klusman, una anciana de 78 años, recibiera atención médica en Cali como consecuencia de un fuerte dolor abdominal.
-
-La mujer remitida desde Palmira tuvo que padecer la negación del servicio en los hospitales al considerar que su condición no ameritaba un servicio especializado. Códigos y órdenes mal elaboradas llevaron a que la abuelita rodara por los centros asistenciales, lo que hizo necesaria la intervención de la Personería de Cali.
-
-“Esto es una clara evidencia de que el paseo de la muerte continúa en la ciudad”, denunció el personero Andrés Santamaría, quien reclamó una investigación para establecer responsabilidades en este caso y otros en los que pacientes han fallecido.</p>
+                                   <p style="color:#000" id="quepaso"></p>
                                 </div>
                                 <div class="panel-footer"></div>
                             </div>
@@ -242,6 +249,7 @@ La mujer remitida desde Palmira tuvo que padecer la negación del servicio en lo
         <!-- Placed at the end of the document so the pages load faster -->
         <!-- Theme Core -->
         <script src="assets/js/jquery.js"></script>
+        <script src="js/detalledenuncia.js"></script>
         <script src="assets/js/chat.js"></script>
         <script src="assets/js/modernizr-2.6.2.min.js"></script>
         
@@ -330,7 +338,7 @@ La mujer remitida desde Palmira tuvo que padecer la negación del servicio en lo
         <!-- Google Maps -->
 		<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 		<script type="text/javascript" src="assets/js/gmap3.js"></script>  
-        <script src="assets/js/gmap.custom-index-map.js"></script>
+        <script src="assets/js/gmap.detalle_denuncia.js"></script>
         
         <!-- Font Awesome Markers -->
 		<script src="assets/plugins/fontawesome-markers-master/fontawesome-markers.js"></script>

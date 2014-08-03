@@ -136,6 +136,13 @@
                         </li>
                         
                         <li id="email">
+                            <a href="acercade.html">
+                                <span class="nav-icon"><i class="icon-info-sign icon-2x"></i></span>
+                                <span class="sidebar-menu-item-text">Acerca de</span>
+                            </a>
+                        </li>
+                        
+                        <li id="email">
                             <a href="login.html">
                                 <span class="nav-icon"><i class="icon-remove icon-2x"></i></span>
                                 <span class="sidebar-menu-item-text">Cerrar Sesión</span> 
@@ -162,31 +169,14 @@
                                                      <table id="tasks" class="table table-hover table-striped table-content">
                                                       <thead>
                                                          <tr>
-                                                            <th style="color:#000">Tipo de Queja</th>
-                                                            <th style="color:#000">Tipología</th>
-                                                            <th style="color:#000">Estatus</th>
-                                                            <th style="color:#000">Revisar</th>
+                                                            <th style="color:#000">Referencia</th>
+                                                            <th style="color:#000">Tipologia</th>
+                                                            <th style="color:#000">SubTipología</th>
+                                                            <th style="color:#000">Estado</th>
+                                                            <th style="color:#000">Detalle</th>
                                                         </tr>
                                                       </thead>
-                                                      <tbody>
-                                                        <tr>
-                                                          <td style="color:#000">SALUD</td>
-                                                          <td style="color:#000">NO HAY ATENCIÓN</td>
-                                                          <td style="color:#000">POR REVIZAR</td>
-                                                            <td><button class="btn btn-default" onClick="location.href='revisar_reclamos.html#id'" >Revisar</button></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="color:#000">EDUCACIÓN</td>
-                                                          <td style="color:#000">NO ENCUENTRO COLEGIO</td>
-                                                          <td style="color:#000">PENDIENTE</td>
-                                                            <td><button class="btn btn-default" onClick="location.href='revisar_reclamos.html#id'" >Revisar</button></td>
-                                                        </tr>
-                                                        <tr>                                                            
-                                                            <td style="color:#000">SALUD</td>
-                                                          <td style="color:#000">NO HAY ATENCIÓN</td>
-                                                          <td style="color:#000">FINALIZADO</td>
-                                                            <td><button class="btn btn-default" onClick="location.href='revisar_reclamos.html#id'" >Revisar</button></td>
-                                                        </tr>
+                                                      <tbody id="denuncias_container">
                                                       </tbody>
                                                   </table>
                                                  </div>
